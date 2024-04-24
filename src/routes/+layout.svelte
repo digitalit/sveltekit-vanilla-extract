@@ -22,7 +22,8 @@
 <div class={`${container} ${containerMain} ${currentTheme}`}>
 	<!-- svelte-ignore component-name-lowercase -->
 	<header class={header}>
-		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/')}>anim</button
+		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/')}
+			>both as animation</button
 		>
 		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/moving')}
 			>moving</button
