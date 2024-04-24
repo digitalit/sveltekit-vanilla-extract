@@ -22,19 +22,20 @@
 <div class={`${container} ${containerMain} ${currentTheme}`}>
 	<!-- svelte-ignore component-name-lowercase -->
 	<header class={header}>
-		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/')}>anim</button
-		>
-		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/moving')}
-			>moving</button
-		>
-		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/building')}
-			>building</button
+		<button
+			aria-label={buttonAriaLabel}
+			class={buttonStyle}
+			on:click={() => ($theme === 'summer' ? theme.set('winter') : theme.set('summer'))}
+			>1 {buttonText}</button
 		>
 		<button
 			aria-label={buttonAriaLabel}
 			class={buttonStyle}
 			on:click={() => ($theme === 'summer' ? theme.set('winter') : theme.set('summer'))}
-			>{buttonText}</button
+			>moving</button
+		>
+		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/building')}
+			>building</button
 		>
 	</header>
 	<slot />

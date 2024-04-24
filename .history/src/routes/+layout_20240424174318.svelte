@@ -6,7 +6,6 @@
 	import { winterTheme } from '$lib/styles/themes/winterTheme.css';
 	import lazyload from 'vanilla-lazyload';
 	import { container, containerMain, header, themeButton } from './layout-styles.css';
-	import { goto } from '$app/navigation';
 
 	if (browser && !document.lazyloadInstance) {
 		document.lazyloadInstance = new lazyload();
@@ -22,19 +21,11 @@
 <div class={`${container} ${containerMain} ${currentTheme}`}>
 	<!-- svelte-ignore component-name-lowercase -->
 	<header class={header}>
-		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/')}>anim</button
-		>
-		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/moving')}
-			>moving</button
-		>
-		<button aria-label={buttonAriaLabel} class={buttonStyle} on:click={() => goto('/building')}
-			>building</button
-		>
 		<button
 			aria-label={buttonAriaLabel}
 			class={buttonStyle}
 			on:click={() => ($theme === 'summer' ? theme.set('winter') : theme.set('summer'))}
-			>{buttonText}</button
+			>1 {buttonText}</button
 		>
 	</header>
 	<slot />
