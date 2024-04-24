@@ -14,7 +14,7 @@
 
 	$: themeIsSummer = $theme === 'summer';
 	$: currentTheme = themeIsSummer ? summerTheme : winterTheme;
-	$: buttonText = themeIsSummer ? 'Summer theme' : 'Winter... theme';
+	$: buttonText = themeIsSummer ? 'Summer theme' : 'Winter theme..';
 	$: buttonAriaLabel = themeIsSummer ? 'Switch to Winter theme' : 'Switch to Summer theme';
 	$: buttonStyle = `${themeButton} ${currentTheme}`;
 </script>
