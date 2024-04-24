@@ -2,5 +2,23 @@
 	"editor.formatOnSave": true,
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.env": true,
+		"**/.eslintignore": true,
+		"**/.eslintrc.cjs": true,
+		"**/.gitignore": true,
+		"**/.history": true,
+		"**/.npmrc": true,
+		"**/.prettierignore": true,
+		"**/.prettierrc": true,
+		"**/.svelte-kit": true,
+		"**/.vscode": true,
+		"**/node_modules": true,
+		"**/README.md": true
 	}
 }
